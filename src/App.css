@@ -1,38 +1,100 @@
-.App {
+
+/* Header */
+.header{
+  padding:6px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: sticky;
+  
+}
+
+.header .fInnerText .fInnerItem{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.h-2{
+font-size: 1.5rem;
+position: relative;
+
+} 
+.h-3 {position: relative;
+    z-index: 99;
+    bottom: 11px;
+    left: 14px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.h-2::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 1px;
+    bottom: 50px;
+    background-color: aqua;
+}
+@media (max-width:663.9px){
+  .header .fInnerText .fInnerItem{
+  margin-right:8px;
+  font-size: 1rem;
+}
+}
+
+/* Footer*/
+.footer{
+  background-color: black;
+  color:rgb(218, 217, 217);
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.footer .l-1,.l-2,.l-3,.l-4{
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+  gap: 5px;
+}
+.footer .l-1 li,.l-2 li,.l-3 li,.l-4 li{
+padding: 5px;
+}
+.f-4 .l-4 .img-1,.img-2,.img-3,.img-4{
+  height: 20px;
+  width: 20px;  
+}
+.f-4 .l-4 {
+  display: flex;
+}
+.f-4 h3{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-main .copy-right{
+  border-top: 1px solid rgb(218, 217, 217);;
+  padding-top: 20px;
 }
+.footer-main .copy-right p{
+  color:rgb(218, 217, 217);
+  text-align: center;
+  padding: 8px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer-main{
+  background-color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.payment .l-4{
+   display: flex;
+   justify-content: end;
+   gap: 40px;
+   margin-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payment .l-4 .img-1,.img-2,.img-3{
+  height: 50px;
+  width: 50px;
 }
