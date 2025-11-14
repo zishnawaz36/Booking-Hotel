@@ -4,8 +4,11 @@
   padding:6px;
   display: flex;
   justify-content: space-between;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  color: white;
   
 }
 
@@ -98,3 +101,201 @@ padding: 5px;
   height: 50px;
   width: 50px;
 }
+/*Hotel Card*/
+.fInnerItemGallery{
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+  border: 1px solid rgb(226, 225, 225);
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+}
+.fInnerItemGallery .fInnerImage img{
+  aspect-ratio: 4/3;
+  height:200px ;
+  object-fit: cover;
+  display: inline;
+  width: 100%;
+  margin: 0 auto;
+}
+.fInnerItemGallery .fInnerText .f-1{
+  display: flex;
+  justify-content: space-between;
+}
+.fInnerItemGallery .fInnerText .f-2 {
+    display: flex;
+    align-items: center;
+    margin-left: -9px;
+    position: absolute;
+    bottom: 20px;
+}
+.fInnerItemGallery .fInnerText .f-2 p{
+  margin-left: 5px;
+}
+.fInnerItemGallery .fInnerText .f-1 p{
+  font-weight: 700;
+}
+.fButton {
+    padding: 5px 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+    position: absolute;
+    right: 21px;
+    text-align: center;
+    font-style: italic;
+}
+.fInnerItem {
+  display: flex;
+  justify-content: space-between;
+}
+.rating {
+    position: absolute;
+    top: 38px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    right: 28px;
+    padding: 3px 9px;
+    font-size: 11px;
+}
+/* Header-Image */
+.Header-background-image{
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+}
+/* Search Details */
+.fGalleryItem-1{
+  border: 1px solid #e6dfdf;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  z-index: 99;
+  width: 60%;
+  top: 40%;
+  background-color: white;
+}
+.fGalleryItem-1 h4 {
+    font-size: 3rem;
+    color: rgb(3, 231, 231);
+    font-weight: 500;
+    text-align: center;
+    margin: 20px;
+}
+.fGalleryItem-1 p{
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+}
+.fGalleryItem-1 .searchdetails{
+  display: flex;
+  flex-wrap: wrap;
+}
+.fGalleryItem-1 .search-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid rgb(234, 232, 232);
+    border-radius: 30px;
+}
+.fGalleryItem-1 .icon-details{
+      margin-top: 21px;
+    margin-right: 10px;
+}
+.searchdetails .text p{
+  font-size: 0.7rem;
+}
+.searchdetails .text h3{
+  font-size: 1rem;
+}
+.fGalleryItem-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+@media (max-width:991.9px) {
+  .fGalleryItem-1 h4 {
+    font-size: 2rem;
+}
+.fGalleryItem-1 p{
+  font-size: 0.9rem;
+  text-align: center;
+  color: black;
+}
+}
+@media (max-width:575px) {
+  .fGalleryItem-1 {
+    width: 100%;
+  }
+    .fGalleryItem-1 {
+        position: absolute;
+        top: 32%;
+        width: 71%;
+    }
+}
+@media (max-width:575px) {
+  .fGalleryItem-1 {
+    width: 100%;
+  }
+    .fGalleryItem-1 {
+        position: absolute;
+        top: 32%;
+        width: 71%;
+    }
+    .fGalleryItem-1 .searchdetails .text h3{
+    font-size: .7rem;
+}
+}
+
+@media (max-width:320px) {
+  .fGalleryItem-1 {
+        position: absolute;
+        top: 32%;
+        width: 71%;
+    }
+}
+/*Why Choose Us */
+.main h3{
+  text-align: center;
+  font-size: 2rem;
+  color: #0199c9;
+}
+.why .fGalleryItem{
+  display: flex;
+}
+.why .inner-gallery img{
+  height: auto;
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.why .inner-gallery h3,p{
+  text-align: center;
+  font-size: 1rem;
+}
+.why .inner-gallery p{
+  font-size: 0.8rem;
+  text-align: center;
+}
+.inner-gallery {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    height: 173px;
+}
+
+  .why-choose-main {
+    width: 33.3%;
+    padding: 12px;
+}
+/* Card */
+c
+

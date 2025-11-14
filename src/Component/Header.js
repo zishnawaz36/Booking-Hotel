@@ -1,4 +1,5 @@
-
+import BackgroundHeader from "./BackgroundHeader";
+import LocationDetails from "./LocationDetails";
 function Header(){
     return(
         <>
@@ -19,6 +20,8 @@ function Header(){
         </ul>
       </div>
     </div>
+      <BackgroundHeader/>
+      <LocationDetails/>
         </>
     )
 }
