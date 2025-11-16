@@ -7,6 +7,7 @@ import Hotel5 from "../assests/HotelImg/Hotel 6.png";
 import Hotel6 from "../assests/HotelImg/Hotel 7.png";
 import Hotel7 from "../assests/HotelImg/Hotel 8.png";
 import {CiLocationOn}  from "react-icons/ci";
+import { Link } from "react-router-dom";
 function Card() {
     const cardData = [
         {
@@ -84,28 +85,30 @@ function Card() {
     ]
     return(
         <>
-        <div className="fInnerItemGallery">
-            {cardData.map((item) => (
-                <div className="fGalleryItem" key={item.id}>
-                    <div className="fInnerImage">
-                        <img src={item.img} alt="hotel-images"/>
+        <h1 className="accomodation-h1">Our Top Rated Hotels</h1>
+          <div className="f-accomodation">
+        {cardData.map((item) =>(
+                <div className="ItemfinnerGallery" key={item.id}>
+                <div className="fGalleryImage">
+                    <img src={item.img} alt="The Oasis" />
+                </div>
+                  <div className="fButton">{item.Rating}</div>
+                  <p className="booking"><a href="#" className="fButton">Booking</a></p>
+                <div className="fGalleryText">
+                    <div className="f-accomodation-text">
+                    <h3>{item.title}</h3>
+                    <p>{item.money}</p>
                     </div>
-                <div className="fInnerText">
-                <div className="f-1">
-                <h3>{item.title}</h3>
-                <p>{item.money}</p>
+                    <div className="f-accomodation-text-2">
+                    <div className="Location">{item.icon}</div>
+                    <div>{item.Address}</div>
+                    </div>
                 </div>
-                <div className="f-2">
-                    <CiLocationOn />
-                    <p>{item.Address}</p>
-                </div>
-                <div className="fButton">Book</div>
-                <div className="rating">{item.Rating}</div>
             </div>
-                    </div>
-            ))}
-        </div>
-
+            
+        ))}
+</div>
+<div className="f-accomodation-button"><Link className="fButton" to="/view-more">View more</Link></div>
         </>
     )
 }
