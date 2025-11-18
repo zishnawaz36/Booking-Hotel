@@ -9,8 +9,9 @@
   width: 100%;
   z-index: 99;
   color: white;
-  
+
 }
+
 
 .header .fInnerText .fInnerItem{
   display: flex;
@@ -370,11 +371,11 @@ padding: 5px;
   border-radius: 6px;
   width: 200px;
 }
-.Explore-Maldavies .fGalleryInner-main .fGalleryInner-2 .fGalleryItem .fGalleryImg img{
-  aspect-ratio: 5/5;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
+.Explore-Maldavies .fGalleryInner-main .fGalleryInner-2 .fGalleryItem .fGalleryImg img {
+    aspect-ratio: 1 / 2;
+    width: 100%;
+    height: 259px;
+    border-radius: 16px;
 }
 .fGalleryInner-main{
   display: grid;
@@ -435,6 +436,86 @@ background-color: rgb(219, 219, 219);
   height: 300px;
   object-fit: cover;
 }
+/* Features */
+.feature{
+  display: grid;
+  grid-template-columns: repeat(3,350px);
+ gap: 30px;
+ justify-content: center;
+ align-items: center;
+ margin: 10px;
+ 
+}
+.feature  .fGalleryText-inner{
+  display: flex;
+  gap: 5px;
+}
+.feature .fGalleryInnerItem{
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ padding: 20px;
+ border-radius: 6px;
+ height: auto;
+ position: relative;
+ height: 480px;
+}
+.feature-h1{
+  text-align: center;
+    font-size: 2rem;
+    color: #0199c9;
+    margin: 30px;
+}
+.feature .fGalleryText p{
+font-size: 0.9rem;
+color: rgb(87, 87, 87);
+}
+.feature .fGalleryImage img{
+ width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+/*Testinomial */
+.testinomial{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.testinomial .fGalleryText-Inner{
+  display: flex;
+  justify-content: space-between;
+}
+.testinomail-h1{
+  text-align: center;
+    font-size: 2rem;
+    color: #0199c9;
+    margin: 30px;
+}
+.testinomial .fGalleryItem {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 12px;
+    background: white;
+    color: black;
+    height: 200px;
+}
+.testinomial .fGalleryImage {
+  padding: 2px;
+  background-color: white;
+}
+.testinomial .fGalleryImage img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: -24px;
+    object-fit: cover;
+    background-color: white;
+    border: 1px solid rgb(225, 225, 225);
+}
 /*.Explore-Maldavies .fGalleryInner-1{
   width: 50%;
 }
@@ -476,6 +557,38 @@ background-color: rgb(219, 219, 219);
   align-items: center;
   width: 50%;
 }*/
+/*Container */
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+        margin: auto;
+    }
+}
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+        margin: auto;
+    }
+}
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+        margin: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+        margin: auto;
+    }
+  }
 /* Card-Responsive */
 @media (max-width:1156.9px) {
   .f-accomodation {
@@ -498,12 +611,19 @@ background-color: rgb(219, 219, 219);
     display: block;
     margin: 0 auto;
   }
+  .testinomial .fGalleryItem{
+    height: unset;
+  }
 }
 @media (max-width:845.9px) {
   .f-accomodation {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
+  .feature{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
   .Explore-Maldavies{
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -514,6 +634,10 @@ background-color: rgb(219, 219, 219);
   .Explore-Maldavies .fGalleryInner-main{
     display: grid;
      grid-template-columns: repeat(6,1fr);
+  }
+  .testinomial{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
   }
   .fGalleryInner-main{
   display: grid;
@@ -533,6 +657,16 @@ background-color: rgb(219, 219, 219);
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
+  .feature .fGalleryInnerItem{
+ height: auto;
+}
+.offer .fGalleryText h3 {
+    font-size: 1rem;
+}
+  .feature{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
     .Explore-Maldavies .fGalleryInner-1 h1{
     font-size: 2rem;
     text-align: center;
@@ -557,6 +691,96 @@ background-color: rgb(219, 219, 219);
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
+.testinomial{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.testinomail-main{
+  background-image: url("./assests//Testinomial/Testinomial.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+.testinomial::after{ 
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.testinomial *{
+  position: relative;
+  z-index: 9999;
+}
+/* Explore Maldivies New */
+.explore-new-maldivies{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 10px;
+  background-image: url("./assests/ExploreMaldivies/Banner.png");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.explore-new-maldivies{
+  position: relative;
+}
+.explore-new-maldivies::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.explore-new-maldivies *{
+ position: relative;
+  z-index: 999;
+}
+.explore-new-maldivies .explore-h1{
+  grid-column: 1/-1;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+}
+.explore-new-maldivies .explore-h1{
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+.explore-new-maldivies .fGalleryItem{
+  grid-column: 1/4;
+    color: white;
+  font-size: 1rem;
+}
+.explore-new-maldivies .fGalleryItem p{
+  font-size: 1.3rem;
+  align-content: center;
+
+}
+.explore-new-maldivies .fGalleryImage{
+grid-column: 4/7;
+ display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  text-align: center;
+
+}
+.explore-new-maldivies .fGalleryInner img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.explore-new-maldivies .fGalleryInner h3{
+  color: white;
 }
 /*responsive Explore Maldivies */
 @media (max-width:991.9px) {

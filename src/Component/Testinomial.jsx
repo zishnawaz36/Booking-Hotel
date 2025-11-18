@@ -15,7 +15,7 @@ function Testinomial() {
     {
       id: 2,
       img: hero2,
-      title: "Ayesha Khan",
+      title: "David",
       role: "UI/UX Designer",
       rating: "⭐⭐⭐⭐",
       subtitle:
@@ -24,7 +24,7 @@ function Testinomial() {
     {
       id: 3,
       img: hero3,
-      title: "Rahul Verma",
+      title: "Albert",
       role: "Software Engineer",
       rating: "⭐⭐⭐⭐⭐",
       subtitle:
@@ -33,6 +33,32 @@ function Testinomial() {
   ];
     return(
         <>
+        <h1 className="testinomail-h1">Testinomial</h1>
+        <div className="testinomail-main">
+        <div className="container">
+          <div className="testinomial">
+            {testinomial.map((item) => (
+            <div className="fGalleryItem" key={item.id}>
+              <div className="fGalleryImage">
+                <img src={item.img} alt="testinomial-image"/>
+              </div>
+              <div className="fGalleryText">
+                <div className="fGalleryText-Inner">
+                  <div className="title">
+                    <h3>{item.title}</h3>
+                     <p>{item.role}</p>
+                    </div>
+                    <div className="rating">
+                      <p>{item.rating}</p>
+                      </div>
+                  </div>
+                  <p>{item.subtitle}</p>
+              </div>
+            </div>
+          ))}
+          </div>
+        </div>
+        </div>
         </>
     )
 }
