@@ -102,40 +102,53 @@ padding: 5px;
   width: 50px;
 }
 /*Hotel Card*/
-.fInnerItemGallery{
+.accomodation-h1{
+  text-align: center;
+  font-size: 2rem;
+  color: #0199c9;
+  margin: 30px;
+}
+.f-accomodation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 12px;
+}
+.f-accomodation .ItemfinnerGallery{
   padding: 20px;
+  background-color: #fff;
+  height: auto;
   border-radius: 6px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
-  border: 1px solid rgb(226, 225, 225);
-  width: 300px;
-  height: 300px;
-  margin: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
 }
-.fInnerItemGallery .fInnerImage img{
-  aspect-ratio: 4/3;
-  height:200px ;
-  object-fit: cover;
-  display: inline;
-  width: 100%;
-  margin: 0 auto;
+
+.f-accomodation .ItemfinnerGallery img {
+    aspect-ratio: 4 / 3;
+    width: 100%;
 }
-.fInnerItemGallery .fInnerText .f-1{
+.f-accomodation .fGalleryText .f-accomodation-text{
   display: flex;
   justify-content: space-between;
 }
-.fInnerItemGallery .fInnerText .f-2 {
-    display: flex;
-    align-items: center;
-    margin-left: -9px;
+.f-accomodation .fButton {
+    padding: 3px 4px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
     position: absolute;
-    bottom: 20px;
+    right: 32px;
+    top: 27px;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
 }
-.fInnerItemGallery .fInnerText .f-2 p{
-  margin-left: 5px;
-}
-.fInnerItemGallery .fInnerText .f-1 p{
-  font-weight: 700;
+.f-accomodation .f-accomodation-text-2{
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 .fButton {
     padding: 5px 10px;
@@ -144,23 +157,25 @@ padding: 5px;
     border: none;
     width: 50px;
     border-radius: 5px;
-    position: absolute;
-    right: 21px;
     text-align: center;
     font-style: italic;
 }
-.fInnerItem {
-  display: flex;
-  justify-content: space-between;
+.f-accomodation-button{
+  text-align: center;
+  margin: 30px;
 }
-.rating {
+.f-accomodation-button a{
+  text-decoration: none;
+}
+
+.f-accomodation .booking {
+    text-decoration: none;
     position: absolute;
-    top: 38px;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: white;
-    right: 28px;
-    padding: 3px 9px;
-    font-size: 11px;
+    right: -12px;
+    bottom: 53px;
+}
+.f-accomodation .booking a{
+  text-decoration: none;
 }
 /* Header-Image */
 .Header-background-image{
@@ -180,12 +195,12 @@ padding: 5px;
   position: absolute;
   z-index: 99;
   width: 60%;
-  top: 40%;
+  top: 32%;
   background-color: white;
 }
-.fGalleryItem-1 h4 {
+.fGalleryItem-1 h3 {
     font-size: 3rem;
-    color: rgb(3, 231, 231);
+   color: #0199c9;
     font-weight: 500;
     text-align: center;
     margin: 20px;
@@ -263,39 +278,296 @@ padding: 5px;
         width: 71%;
     }
 }
-/*Why Choose Us */
-.main h3{
+/*New  Why Choose Us */
+.why-choose-us{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+  margin: 10px;
+}
+.why-choose-us-h-1{
   text-align: center;
-  font-size: 2rem;
-  color: #0199c9;
+    font-size: 2rem;
+    color: #0199c9;
+    margin: 30px;
 }
-.why .fGalleryItem{
-  display: flex;
+.why-choose-us .fGalleryItem{
+  padding: 12px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  text-align: center;
+  align-content: center;
 }
-.why .inner-gallery img{
-  height: auto;
-  width: 70px;
+.why-choose-us .fGalleryItem .fGalleryImage {
+  padding:6px;
+  text-align: center;
   display: block;
   margin: 0 auto;
 }
-.why .inner-gallery h3,p{
-  text-align: center;
-  font-size: 1rem;
+.why-choose-us .fGalleryItem .fGalleryImage img{
+  height: auto;
+  width: 60px;
+  display: block;
+  margin: 0 auto;
 }
-.why .inner-gallery p{
+.why-choose-us .fGalleryText{
+  text-align: center;
+}
+.why-choose-us .fGalleryText p{
   font-size: 0.8rem;
+}
+/* View More */
+.view-more{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.view-more .view-button{
+  padding: 10px 1rem;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: 1px solid white;
+  border-radius: 6px;
+}
+.view-more .view-button a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Explore Maldivies */
+.Explore-Maldavies{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  background-image: url("./assests/ExploreMaldivies/Banner.png");
+  color: white;
+  height: 400px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.Explore-Maldavies .fGalleryInner-1{
+  grid-column: span 2;
+}
+.Explore-Maldavies .fGalleryInner-main{
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin: 0 auto;
+  
+}
+
+.explore-h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #0199c9;
+    margin: 50px;
+}
+.Explore-Maldavies .fGalleryInner-main .fGalleryInner-2 .fGalleryItem .fGalleryImg{
+  border-radius: 6px;
+  width: 200px;
+}
+.Explore-Maldavies .fGalleryInner-main .fGalleryInner-2 .fGalleryItem .fGalleryImg img{
+  aspect-ratio: 5/5;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.fGalleryInner-main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.Explore-Maldavies .fGalleryInner-1{
+  margin-left: 20px;
+}
+.Explore-Maldavies .fGalleryInner-1 .fButton{
+  text-decoration: none;
+  padding: 6px 2rem;
   text-align: center;
 }
-.inner-gallery {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 15px;
-    height: 173px;
+.Explore-Maldavies .fGalleryInner-1 p{
+  width: 86%;
+}
+.Explore-Maldavies .fGalleryInner-1 h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+/* Offer */
+.offer{
+  display: flex;
+}
+.offer .fGalleryImage{
+  width: 40%;
+}
+.offer .fGalleryText{
+ text-align: center;
+ width: 60%;
+}
+.offer .fGalleryText h3{
+  font-size: 2rem;
+}
+.offer .fGalleryText input{
+  padding: 12px;
+  width: 50%;
+  border-radius: 6px;
+  border: 1px solid #00c6ff;
+}
+.offer .fGalleryText a{
+  margin-left: 10px;
+}
+.offer .fGalleryText h3 span{
+  display: block;
 }
 
-  .why-choose-main {
-    width: 33.3%;
-    padding: 12px;
-}
-/* Card */
-c
+.offer .fGalleryImage{
+border-radius: 10px;
 
+}
+.offer .fGalleryText{
+align-content: center;
+background-color: rgb(219, 219, 219);
+}
+.offer .fGalleryImage img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+/*.Explore-Maldavies .fGalleryInner-1{
+  width: 50%;
+}
+.Explore-Maldavies .fGalleryInner-2{
+  width: 16%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Explore-Maldavies .fGalleryInner-main .fGalleryInner-2 .fGalleryItem .fGalleryImg h3{
+   color: #0199c9;
+  text-align: center;
+  font-weight: 700;
+}
+.Explore-Maldavies .fGalleryInner-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.Explore-Maldavies .fGalleryInner-1 p{
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.Explore-Maldavies .fGalleryInner-1 .fButton{
+  padding: 12px 60px;
+  text-decoration: none;
+}
+.Explore-Maldavies .fGalleryInner-1{
+  width: 50%;
+}
+.Explore-Maldavies .fGalleryInner-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}*/
+/* Card-Responsive */
+@media (max-width:1156.9px) {
+  .f-accomodation {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .why-choose-us{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+ .Explore-Maldavies{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  }
+  .Explore-Maldavies .fGalleryInner-main{
+    display: grid;
+     grid-template-columns: repeat(4,1fr);
+  }
+  .Explore-Maldavies .fGalleryInner-2{
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width:845.9px) {
+  .f-accomodation {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .Explore-Maldavies{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  }
+  .Explore-Maldavies .fGalleryInner-1 h1{
+    font-size: 2.2rem;
+  }
+  .Explore-Maldavies .fGalleryInner-main{
+    display: grid;
+     grid-template-columns: repeat(6,1fr);
+  }
+  .fGalleryInner-main{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.Explore-Maldavies .fGalleryInner-2{
+    display: block;
+    margin: 0 auto;
+  }
+.why-choose-us{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+}
+@media (max-width:575px) {
+  .f-accomodation {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+    .Explore-Maldavies .fGalleryInner-1 h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Explore-Maldavies{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  }
+  .fGalleryInner-main{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.Explore-Maldavies .fGalleryInner-2{
+    display: block;
+    margin: 0 auto;
+  }   
+.Explore-Maldavies .fGalleryInner-main{
+    display: grid;
+     grid-template-columns: repeat(1,1fr);
+  }
+ .why-choose-us{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+}
+/*responsive Explore Maldivies */
+@media (max-width:991.9px) {
+  .Explore-Maldavies{
+  height: auto;
+}
+.Explore-Maldavies .fGalleryInner-1 {
+  width: 100%;
+}
+
+.Explore-Maldavies .fGalleryInner-main{
+  width: 100%;
+}
+}

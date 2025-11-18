@@ -6,7 +6,7 @@ function LocationDetails() {
         <>
         <div className="fGalleryItem-main">
             <div className="fGalleryItem-1">
-            <h4>Good Morning !</h4>
+            <h3>Good Morning !</h3>
             <p>Explore beautiful places in the world with Acenda</p>
 
         <div className="search-box">

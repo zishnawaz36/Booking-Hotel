@@ -1,13 +1,14 @@
-
-import Footer from "./Footer";
 import Card from "./Card";
 import WhyChooseUs from "./whyChooseUs";
+import ExploreMaldavies from "./ExploreMaldavies";
+import Offer from "./Offer";
 function Home() {
     return(
         <>
         <WhyChooseUs/>
         <Card/>
-        <Footer/>
+        <ExploreMaldavies/>
+        <Offer/>
         </>
     
     )
